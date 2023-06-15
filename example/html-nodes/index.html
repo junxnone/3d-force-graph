@@ -29,7 +29,7 @@
       extraRenderers: [new CSS2DRenderer()]
     })
     (document.getElementById('3d-graph'))
-      .jsonUrl('../datasets/miserables.json')
+      .jsonUrl('../datasets/f.json')
       .nodeAutoColorBy('group')
       .nodeThreeObject(node => {
           const sprite = new SpriteText(node.id);
