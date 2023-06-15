@@ -44,6 +44,12 @@
           node.fy = node.y;
           node.fz = node.z;
       })
+      .onNodeRightClick(node => {
+        if (node.childLinks.length) {
+          node.collapsed = !node.collapsed; // toggle collapse state
+          Graph.graphData(getPrunedTree());
+        }
+      })
     ;
   </script>
 </body>
