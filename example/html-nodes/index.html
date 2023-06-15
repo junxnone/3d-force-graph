@@ -35,12 +35,12 @@
         nodeEl.textContent = node.id;
         nodeEl.style.color = node.color;
         nodeEl.className = 'node-label';
-        nodeEl.href = "http://baidu.com";
+        nodeEl.href = "https://baidu.com";
         
         return new CSS2DObject(nodeEl);
       })
       .nodeThreeObjectExtend(true)
-      .onNodeClick(node => window.open(node.href))
+      .onNodeClick(node => window.open('https://baidu.com'))
     ;
   </script>
 </body>
