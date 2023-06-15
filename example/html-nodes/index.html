@@ -35,6 +35,8 @@
         nodeEl.textContent = node.id;
         nodeEl.style.color = node.color;
         nodeEl.className = 'node-label';
+        nodeEl.href = "http://baidu.com";
+        
         return new CSS2DObject(nodeEl);
       })
       .nodeThreeObjectExtend(true)
