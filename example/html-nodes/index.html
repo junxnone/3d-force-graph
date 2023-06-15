@@ -31,7 +31,7 @@
     (document.getElementById('3d-graph'))
       .jsonUrl('../datasets/f.json')
       .nodeAutoColorBy('group')
-      .linkAutoColorBy('source')
+      .linkAutoColorBy('value')
       .nodeThreeObject(node => {
           const sprite = new SpriteText(node.id);
           sprite.material.depthWrite = false; // make sprite background transparent
