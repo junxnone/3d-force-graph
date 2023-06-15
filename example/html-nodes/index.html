@@ -31,13 +31,11 @@
       .jsonUrl('../datasets/miserables.json')
       .nodeAutoColorBy('group')
       .nodeThreeObject(node => {
-        const nodeEl = document.createElement('div');
-        nodeEl.textContent = node.id;
-        nodeEl.style.color = node.color;
-        nodeEl.className = 'node-label';
-        nodeEl.href = "https://baidu.com";
-        
-        return new CSS2DObject(nodeEl);
+          const sprite = new SpriteText(node.id);
+          sprite.material.depthWrite = false; // make sprite background transparent
+          sprite.color = node.color;
+          sprite.textHeight = 8;
+          return sprite;
       })
       .nodeThreeObjectExtend(true)
       .onNodeClick(node => window.open('https://baidu.com'))
