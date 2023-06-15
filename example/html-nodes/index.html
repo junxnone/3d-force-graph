@@ -32,7 +32,7 @@
       .jsonUrl('../datasets/f.json')
       .nodeAutoColorBy('group')
       .linkAutoColorBy('value')
-      .linkWidth(4)
+      .linkWidth(2)
       .nodeThreeObject(node => {
           const sprite = new SpriteText(node.id);
           sprite.material.depthWrite = false; // make sprite background transparent
