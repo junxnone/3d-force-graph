@@ -15,10 +15,21 @@
       background-color: rgba(0,0,0,0.5);
       user-select: none;
     }
+    .topnav input[type=text] {
+      float: right;
+      padding: 6px;
+      margin-top: 8px;
+      margin-right: 16px;
+      border: none;
+      font-size: 17px;
+    }
   </style>
 </head>
 
 <body>
+<div class="topnav">
+  <input type="text" placeholder="搜索..">
+</div>
   <div id="3d-graph"></div>
 
   <script type="importmap">{ "imports": { "three": "https://unpkg.com/three/build/three.module.js" }}</script>
